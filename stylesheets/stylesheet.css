@@ -3,36 +3,177 @@ Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Sancreek);
-@import url(http://fonts.googleapis.com/css?family=Fondamento);
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Baumans);
 
 /*******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
+* {padding: 0px; margin: 0px;}
+a {text-decoration: none; color: #e4e4e4;}
+html {background : white;}
+img {width: 100%;}
 
-html { background : #742c00;}
-
-.title {
-  color : #f6cf32;
-  text-align : center;
-  font-family : 'sancreek';
+.menu_bg {
+  box-sizing: border-box;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #202020;
+  color: #e4e4e4;
+  font-family: "Arimo";
+  border-right: solid 1px #202020;
 }
+
+.menu {
+  position: absolute;
+  width: 200px;
+  top: 30%;
+}
+
+
+.menu li {
+  list-style: none;
+  line-height: 130%;
+  height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.menu li a {
+  color : #7a7a7a;
+}
+
+.menuHr {
+  height: 0px;
+  text-align: center;
+  margin-bottom: 32px;
+  background-color: #f8f8f8;
+}
+
+.logo {
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.logo_icon {
+  width: 60px;
+  height: 60px;
+  margin: 0px auto 10px;
+}
+
+#box {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+
+.logo_box1 {margin-left: 0px; margin-top: 0px;}
+.logo_box2 {margin-left: 0px; margin-top: 20px;}
+.logo_box3 {margin-left: 0px; margin-top: 40px;}
+.logo_box4 {margin-left: 20px; margin-top: 20px;}
+.logo_box5 {margin-left: 20px; margin-top: 40px;}
+.logo_box6 {margin-left: 40px; margin-top: 40px;}
+
 
 h1 {
-  line-height : 0px;
-}
-
-p {
-  margin : 80px 0px 80px 470px;
-  width : 320px;
-  height : 500px;
-  padding : 20px;
-  overflow : hidden;
-  font-family : 'Fondamento';
-  text-align : justify;
-  outline : 2px solid #5c1e00;
-}
-
-#text {
+  font-family: "Baumans";
+  font-size: 34pt;
+  letter-spacing: -2pt;
+  line-height: 100%;
+  background: #202020;
   text-align: center;
+}
+
+h3 {
+  font-size: 12px;
+  letter-spacing: 5pt;
+  line-height: 100%;
+  margin-bottom: 40px;
+  background: #202020;
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  min-width: 500px;
+  max-width: 800px;
+  left: 200px;
+}
+
+.contentsWrapper {
+  margin-bottom : -3px;
+}
+
+
+.illustBt {
+  width: 120px;
+  height: 120px;
+  margin : 8px 0px 0px 12px;
+  background-color: #202020;
+  color: #e4e4e4;
+  position: absolute;
+  cursor: default;
+
+  transition: .5s;
+}
+
+.illustBt:hover {
+  opacity: 0;
+}
+
+.illustClip {
+  width : 100%;
+  height: 10px;
+  background-color: #e4e4e4;
+  position: absolute;
+}
+
+.illustTitle {
+  font-family: "Baumans";
+  font-size: 12pt;  
+  width : 100%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  bottom : 55px;
+  padding-bottom: 4px;
+}
+
+.illustClient {
+  font-family: "Baumans";
+  font-size: 10pt;  
+  width : 100%;
+  position: absolute;
+  text-align: center;
+  top : 74px;
+  padding-top: 4px;
+}
+
+.illustHr {
+  width: 100%;
+  position: absolute;
+  top: 54%;
+  text-align: center;
+}
+
+
+.illustBt_bottom {
+  width: 120px;
+  height: 120px;
+  margin : 8px 0px 0px 12px;
+  background-color: rgba(200, 200, 200, 0.7);
+  color: black;
+  position: absolute;
+  cursor: default;
+}
+
+.illustBt_bottom .illustClip {
+  width : 100%;
+  height: 10px;
+  background-color: #444444;
+  position: absolute;
 }
